@@ -31,17 +31,16 @@ int getMax(int arr[], int n){
 }
 
 int main(){
-    int size;
+    int n, arr[100];
     cout << "Enter the size of the array: ";
-    cin >> size;
+    cin >> n;
 
-    int arr[100];
-    for (int i = 0; i < size; i++){
+    for (int i = 0; i < n; i++){
         cin >> arr[i];
     }
 
-    cout << "Minimum value is " << getMin(arr, size) << endl;
-    cout << "Maximum value is " << getMax(arr, size) << endl;
+    cout << "Minimum value is " << getMin(arr, n) << endl;
+    cout << "Maximum value is " << getMax(arr, n) << endl;
 
     return 0;
 }
