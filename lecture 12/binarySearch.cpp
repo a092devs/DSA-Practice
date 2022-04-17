@@ -25,7 +25,8 @@ int main(){
     cout << "Enter the size of the array: ";
     cin >> n;
 
-    cout << "Enter the elements of the array: ";
+    cout << "Enter the elements of the array: "; 
+    // Enter the array in sorted order
     for(int i=0; i<n; i++){
         cin >> arr[i];
     }
