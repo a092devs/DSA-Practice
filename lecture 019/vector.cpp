@@ -7,31 +7,31 @@ int main()
   vector<int> a(5, 1);
   vector<int> last(a);
 
-  cout << "print last" << endl;
+  cout << "Print last: ";
   for (int i : last)
   {
     cout << i << " ";
   }
   cout << endl;
 
-  cout << "Capacity-> " << v.capacity() << endl;
+  cout << "Capacity: " << v.capacity() << endl;
 
   v.push_back(1);
-  cout << "Capacity-> " << v.capacity() << endl;
+  cout << "Capacity: " << v.capacity() << endl;
 
   v.push_back(2);
-  cout << "Capacity-> " << v.capacity() << endl;
+  cout << "Capacity: " << v.capacity() << endl;
 
   v.push_back(3);
-  cout << "Capacity-> " << v.capacity() << endl;
-  cout << "Size-> " << v.size() << endl;
+  cout << "Capacity: " << v.capacity() << endl;
+  cout << "Size: " << v.size() << endl;
 
-  cout << "Elemetn at 2nd Index" << v.at(2) << endl;
+  cout << "Element at 2nd Index: " << v.at(2) << endl;
 
-  cout << "front " << v.front() << endl;
-  cout << "back " << v.back() << endl;
+  cout << "Front: " << v.front() << endl;
+  cout << "Back: " << v.back() << endl;
 
-  cout << "before pop" << endl;
+  cout << "Before pop: ";
   for (int i : v)
   {
     cout << i << " ";
@@ -40,13 +40,14 @@ int main()
 
   v.pop_back();
 
-  cout << "after pop" << endl;
+  cout << "After pop: ";
   for (int i : v)
   {
     cout << i << " ";
   }
+  cout << endl;
 
-  cout << "before clear size " << v.size() << endl;
+  cout << "Before clear size: " << v.size() << endl;
   v.clear();
-  cout << "after clear size " << v.size() << endl;
+  cout << "After clear size: " << v.size() << endl;
 }

@@ -14,7 +14,7 @@ int main()
     maxi.push(3);
     maxi.push(2);
     maxi.push(0);
-    cout << "size-> " << maxi.size() << endl;
+    cout << "size: " << maxi.size() << endl;
     int n = maxi.size();
     for (int i = 0; i < n; i++)
     {
@@ -37,5 +37,5 @@ int main()
     }
     cout << endl;
 
-    cout << "khaali h kya bhai  ?? -> " << mini.empty() << endl;
+    cout << "Is it empty: " << mini.empty() << endl;
 }

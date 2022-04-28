@@ -6,28 +6,26 @@ int main()
 {
     map<int, string> m;
 
-    m[1] = "babbar";
-    m[13] = "kumar";
-    m[2] = "love";
+    m[1] = "Babbar";
+    m[13] = "Kumar";
+    m[2] = "Love";
 
-    m.insert({5, "bheem"});
+    m.insert({5, "Bheem"});
 
-    cout << "before erase" << endl;
+    cout << "Before erase: " << endl;
     for (auto i : m)
     {
         cout << i.first << " " << i.second << endl;
     }
 
-    cout << "finding -13 -> " << m.count(-13) << endl;
+    cout << "Finding - 13: " << m.count(-13) << endl;
 
     // m.erase(13);
-    cout << "after erase" << endl;
+    cout << "After erase: " << endl;
     for (auto i : m)
     {
         cout << i.first << " " << i.second << endl;
     }
-    cout << endl
-         << endl;
 
     auto it = m.find(5);
 

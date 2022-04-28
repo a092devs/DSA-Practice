@@ -18,7 +18,7 @@ int main()
 
     for (auto i : s)
     {
-        cout << i << endl;
+        cout << i << " ";
     }
     cout << endl;
 
@@ -29,10 +29,10 @@ int main()
 
     for (auto i : s)
     {
-        cout << i << endl;
+        cout << i << " ";
     }
     cout << endl;
-    cout << "-5 is present or not -> " << s.count(-5) << endl;
+    cout << "-5 is present or not: " << s.count(-5) << endl;
 
     set<int>::iterator itr = s.find(5);
 

@@ -6,15 +6,15 @@ int main()
 {
     queue<string> q;
 
-    q.push("love");
+    q.push("Love");
     q.push("Babbar");
     q.push("Kumar");
 
-    cout << "Size before pop" << q.size() << endl;
+    cout << "Size before pop: " << q.size() << endl;
 
-    cout << "First Element " << q.front() << endl;
+    cout << "First Element: " << q.front() << endl;
     q.pop();
-    cout << "First Element " << q.front() << endl;
+    cout << "First Element: " << q.front() << endl;
 
-    cout << "Size after pop" << q.size() << endl;
+    cout << "Size after pop: " << q.size() << endl;
 }

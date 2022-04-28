@@ -6,16 +6,16 @@ int main()
 {
     stack<string> s;
 
-    s.push("love");
-    s.push("babbar");
+    s.push("Love");
+    s.push("Babbar");
     s.push("Kumar");
 
-    cout << "Top Element-> " << s.top() << endl;
+    cout << "Top Element: " << s.top() << endl;
 
     s.pop();
-    cout << "Top Element-> " << s.top() << endl;
+    cout << "Top Element: " << s.top() << endl;
 
-    cout << "size of stack" << s.size() << endl;
+    cout << "Size of stack: " << s.size() << endl;
 
-    cout << "Empty or not " << s.empty() << endl;
+    cout << "Empty or not: " << s.empty() << endl;
 }
