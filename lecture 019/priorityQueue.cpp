@@ -37,5 +37,5 @@ int main()
     }
     cout << endl;
 
-    cout << "Is it empty: " << mini.empty() << endl;
+    cout << "Empty or not: " << mini.empty() << endl;
 }
