@@ -1,41 +1,29 @@
 #include<iostream>
-#include<vector>
 using namespace std;
 
-void sieve(bool prime[]) {
-
-    prime[0] = prime[1] = 0;
-
-    for(int i=2;i<=1000000;i++){
-        prime[i]= true;
-    }
-
-    for(int i = 2; i<=1000000; i++) {
-
-        if(prime[i]){
-            for(int j = 2*i; j<=1000000; j+=i){
-                prime[j] = false;   
+void primeSieve(int n){
+    int prime[n+1] = {0};
+    for (int i = 2; i < n; i++){
+        if (prime[i] == 0){
+            for (int j = 2 * i; j <= n; j += i){
+                prime[j] = 1;
             }
         }
     }
+    for (int i = 2; i < n; i++){
+        if (prime[i] == 0){
+            cout << i << " ";
+        }
+    }
+    cout << endl;
 }
 
-int main() {
-
-    bool prime[1000001];
-    sieve(prime);
-
+int main(){
     int n;
+    cout << "Enter a number: ";
     cin >> n;
-    while(n!=-1) {
-        if(prime[n]) {
-            cout << "It is a Prime Number" << endl;
-        }
-        else{
-            cout << "It is not a Prime Number" << endl;
-        }
-        cin >> n;
-    }
+
+    primeSieve(n);
 
     return 0;
 }
