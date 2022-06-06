@@ -11,7 +11,7 @@ int getSum(int *arr, int n){
 
 int main(){
     int n;
-    cout << "Enter the number of elements: ";
+    cout << "Enter the size of the array: ";
     cin >> n;
 
     int *arr = new int[n]; // new is for HEAP memory allocation
