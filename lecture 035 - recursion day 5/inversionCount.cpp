@@ -32,9 +32,10 @@ int merge(int *arr, int s, int e){
     while (index1 < len1 && index2 < len2){
         if (first[index1] <= second[index2])
             arr[mainIndex++] = first[index1++];
-        else    
+        else{   
             arr[mainIndex++] = second[index2++];
             inversionCount += len1 - index1;
+        }
     }
     while (index1 < len1)
         arr[mainIndex++] = first[index1++];
