@@ -3,7 +3,7 @@ using namespace std;
 
 long long int sqrtInteger(int n){
     int s = 0, e = n;
-    long long int mid = s + (e-s)/2;
+    long long int mid = s + (e - s) / 2;
 
     long long int ans = -1;
 
@@ -18,7 +18,7 @@ long long int sqrtInteger(int n){
         }
         else
             e = mid - 1;
-    mid = s + (e-s)/2;
+    mid = s + (e - s) / 2;
     }
     return ans;
 }
