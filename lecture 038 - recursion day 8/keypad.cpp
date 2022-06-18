@@ -4,7 +4,7 @@ using namespace std;
 void solve(string digit, string output, int index, vector<string> &ans, string mapping[]){
     if(index >= digit.length()){
         ans.push_back(output);
-    return;
+        return;
     }
 
     int number = digit[index] - '0';
