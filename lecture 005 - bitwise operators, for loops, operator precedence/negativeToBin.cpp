@@ -22,4 +22,5 @@ int main() {
 
     cout << "Binary equivalent " << (~ans + 1) * -1;
     
+    return 0;
 }

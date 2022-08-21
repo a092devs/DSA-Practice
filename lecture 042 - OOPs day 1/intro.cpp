@@ -40,10 +40,10 @@ class Hero {
 
     void print(){
         cout << endl;
-        cout << "[ Name: " << this->name<< " ,";
-        cout << "health: " << this->health << " ,";
-        cout <<"level: " << this->level << " ]";
-        cout << endl << endl;
+        cout << "[Name: " << this->name << ",";
+        cout << "health: " << this->health << ",";
+        cout <<"level: " << this->level << "]";
+        cout << endl;
     }
 
     int getHealth() {
@@ -103,14 +103,14 @@ int main() {
     // //manually destructor call
     // delete b;
 
-//     Hero hero1;
+    // Hero hero1;
 
-//     hero1.setHealth(12);
-//     hero1.setLevel('D');
-//     char name[7] = "Babbar";
-//     hero1.setName(name);
+    // hero1.setHealth(12);
+    // hero1.setLevel('D');
+    // char name[7] = "Babbar";
+    // hero1.setName(name);
 
-//     //hero1.print();
+    //hero1.print();
 
 //     //use default copy constructor
 
@@ -151,7 +151,7 @@ int main() {
     cout << "level is  " << a.level << endl;
     cout << " health is " << a.getHealth() << endl;
 
-    //dynamicallly
+    //dynamically
     Hero *b = new Hero;
     b->setLevel('A');
     b->setHealth(70);
