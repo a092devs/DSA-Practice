@@ -13,7 +13,7 @@ class A{
     }
 
     void sayHello(string name){
-        cout << "Hello " << name  << endl;
+        cout << "Hello" << name  << endl;
     }
 };
 
@@ -43,7 +43,7 @@ class B {
 class Animal{
     public:
     void speak(){
-        cout << "Speaking "<< endl;
+        cout << "Speaking" << endl;
     }
 };
 
