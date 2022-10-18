@@ -2,12 +2,12 @@
 using namespace std;
 
 class Student{
-private:
+    private:
     string name;
     int age;
     int height;
 
-public:
+    public:
     int getAge(){
         return this->age;
     }
@@ -15,7 +15,6 @@ public:
 
 int main(){
     Student first;
-
     cout << "Everything is working fine" << endl;
 
     return 0;
